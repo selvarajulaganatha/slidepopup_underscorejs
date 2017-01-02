@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="slide-bottom-section">
+            <a href="#" title="close" class="close-popup"><img src="images/close-icon.png" alt=""></a>
+            <div class="slide-popup">
+                <h2>Are you looking for <strong>'White dress'</strong>?</h2>
+                <ul class="main-section clearfix">
+                    <li class="split">
+                        <div class="image-part" style="background-image: url(images/p1.jpg);"></div>
+                        <div class="product-name">
+                            <div>
+                                <h4>cotton White Dresses</h4>
+                                <a href="#">See more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="split">
+                        <div class="image-part" style="background-image: url(images/r1.jpg);"></div>
+                        <div class="product-name">
+                            <div>
+                                <h4>cotton White</h4>
+                                <a href="#">See more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/build/global.min.js"></script>
+</body>
+
+</html>

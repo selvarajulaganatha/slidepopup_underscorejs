@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Underscore.js Templates</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- BEGIN: Underscore Template Definition. -->
+    <script type='text/html' id='contactTemplate'>
+        <li class="split" id="contact-<%= avatar %>">
+            <div class="image-part" style="background-image: url(<%= avatar %>);"></div>
+            <div class="product-name">
+                <div>
+                    <h4 class="name"><%= name %></h4>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </li>
+    </script>
+    <div class="slide-bottom-section">
+        <a href="#" title="close" class="close-popup"><img src="images/close-icon.png" alt=""></a>
+        <div class="slide-popup">
+            <h2>Are you looking for <strong>'White dress'</strong>?</h2>
+            <ul class="main-section clearfix" id='contactList'>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Underscore Template Definition. -->
+    <!-- Include and run scripts. -->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript">
+    var contacts = [{
+        name: 'cotton White Dresses',
+        avatar: "images/r1.jpg"
+    }, {
+        name: 'cotton White',
+        avatar: "images/r2.jpg"
+    }]
+
+    $(document).ready(function() {
+        var compiled = _.template($("#contactTemplate ").html());
+
+        _.each(contacts, function(d, i) {
+            $("#contactList").append(compiled(d));
+        });
+    });
+    </script>
+</body>
+
+</html>
